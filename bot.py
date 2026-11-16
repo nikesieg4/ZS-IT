@@ -33,7 +33,13 @@ class ZSITBot(commands.Bot):
     def __init__(self):
         intents = discord.Intents.default()
         intents.message_content = True  # fuer Ticket-Transkripte
-        super().__init__(command_prefix=commands.when_mentioned, intents=intents, help_command=None)
+        super().__init__(
+            command_prefix=commands.when_mentioned,
+            intents=intents,
+            help_command=None,
+            status=discord.Status.online,
+            activity=discord.Activity(type=discord.ActivityType.watching, name="Berufsfeuerwehr | /warns"),
+        )
         self.cfg = config.load()
         self.db = Database(BASE / "data" / "bot.sqlite3")
         self.synced = False
