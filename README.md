@@ -1,4 +1,4 @@
-# ZS-IT-Bot
+# ZS-IT
 
 Discord-Bot „Zentraler Service Informationstechnik“ für die Berufsfeuerwehr (ER:LC-Roleplay).
 
@@ -15,7 +15,7 @@ Rang- und Warn-Befehle dürfen: Höherer Dienst, `[ZS-P]`, Wachleiter und Admini
 ## Installation (Debian 13, als root)
 
 ```bash
-apt update && apt install -y curl && bash <(curl -fsSL https://raw.githubusercontent.com/nikesieg4/ZS-IT-Bot/main/install.sh)
+apt update && apt install -y curl && bash <(curl -fsSL https://raw.githubusercontent.com/nikesieg4/ZS-IT/main/install.sh)
 ```
 
 Das Skript fragt einmal nach dem Bot-Token, richtet alles unter `/opt/zsit-bot` ein und startet den

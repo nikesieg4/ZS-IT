@@ -2,7 +2,7 @@
 # Installiert oder aktualisiert den ZS-IT-Bot auf Debian (als root ausfuehren).
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/nikesieg4/ZS-IT-Bot.git}"
+REPO_URL="${REPO_URL:-https://github.com/nikesieg4/ZS-IT.git}"
 DIR=/opt/zsit-bot
 SVC_USER=zsitbot
 SERVICE=zsit-bot
