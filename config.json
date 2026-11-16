@@ -1,0 +1,81 @@
+{
+  "_hinweis": "Rollen und Kanaele werden ueber ihren Namen gefunden. Statt eines Namens kann ueberall auch eine ID (als Zahl in Anfuehrungszeichen) eingetragen werden. Eigene Aenderungen am besten in config.local.json ablegen (gleicher Aufbau, ueberschreibt diese Datei und bleibt bei Updates erhalten).",
+
+  "rang_rollen": [
+    "BMA » [Brandmeisteranwärter]",
+    "BM » [Brandmeister]",
+    "OBM » [Oberbrandmeister]",
+    "HBM » [Hauptbrandmeister]",
+    "BIA » [Brandinspektoranwärter]",
+    "BI » [Brandinspektor]",
+    "BOI » [Brandoberinspektor]",
+    "BAM » [Brandamtsmann]",
+    "BAR » [Brandamtsrat]",
+    "BOAR » [Brandoberamtsrat]",
+    "BRef » [Brandreferendar]",
+    "BR » [Brandrat]",
+    "BOR » [Brandoberrat]",
+    "BD » [Branddirektor]",
+    "AL-EB » [Abteilungsleiter Einsatzbetrieb]",
+    "KBD-V » [Stv. Kreisbranddirektor]",
+    "KBD » [Kreisbranddirektor]"
+  ],
+
+  "hoeherer_dienst": [
+    "BRef » [Brandreferendar]",
+    "BR » [Brandrat]",
+    "BOR » [Brandoberrat]",
+    "BD » [Branddirektor]",
+    "AL-EB » [Abteilungsleiter Einsatzbetrieb]",
+    "KBD-V » [Stv. Kreisbranddirektor]",
+    "KBD » [Kreisbranddirektor]"
+  ],
+
+  "berechtigte_rollen": [
+    "@hoeherer_dienst",
+    "[ZS-P] Zentraler Service Personal",
+    "Wachleiter"
+  ],
+
+  "hierarchie_pruefung": true,
+
+  "kanaele": {
+    "rang_log": "rang-log",
+    "warn_log": "moderation",
+    "ticket_log": "bot-log"
+  },
+
+  "tickets": {
+    "kategorie_name": "• TICKETS •",
+    "kategorien": [
+      {
+        "id": "allgemein",
+        "label": "Allgemeine Frage",
+        "emoji": "❓",
+        "beschreibung": "Allgemeine Anliegen an die Leitung",
+        "rollen": ["@hoeherer_dienst"]
+      },
+      {
+        "id": "personal",
+        "label": "Personal (ZS-P)",
+        "emoji": "👥",
+        "beschreibung": "Rangfragen, Abmeldungen, Beschwerden",
+        "rollen": ["[ZS-P] Zentraler Service Personal"]
+      },
+      {
+        "id": "it",
+        "label": "IT (ZS-IT)",
+        "emoji": "🖥️",
+        "beschreibung": "Probleme mit Bot, Discord oder Dispo-System",
+        "rollen": ["[ZS-IT] Zentraler Service Informationstechnik"]
+      }
+    ]
+  },
+
+  "warns": {
+    "ablauf_tage": 30,
+    "schwelle": 3,
+    "sperr_rolle": "Außendienstsperre",
+    "warn_rollen": ["Verwarnung 1", "Verwarnung 2", "Verwarnung 3"]
+  }
+}
